@@ -66,25 +66,28 @@ nav {
   margin: auto;
 }
 
-.section-mirage {
-  text-align: center;
-  font-size: 10px;
-  letter-spacing: 6px;
+.section-title {
   color: #d4af37;
-  opacity: 0.5;
   margin-bottom: 20px;
 }
 
 /* ABOUT */
+.about-banner {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #3a2f12;
+}
+
 .about-card {
   background: #14110a;
   border: 1px solid #3a2f12;
   border-radius: 16px;
-  padding: 30px;
+  padding: 24px;
 }
 
 .about-card h2 {
-  color: gold;
+  color: #d4af37;
   margin-bottom: 10px;
 }
 
@@ -95,18 +98,12 @@ nav {
   border-radius: 14px;
   padding: 16px;
   margin-bottom: 12px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.post:hover {
-  border-color: gold;
 }
 
 .post-header {
   display: flex;
-  align-items: center;
   gap: 12px;
+  align-items: center;
 }
 
 .post-header img {
@@ -122,31 +119,25 @@ nav {
 }
 
 .post-creator {
-  font-size: 0.85rem;
   color: #d4af37;
   font-weight: 700;
+  font-size: 0.85rem;
 }
 
 .post-headline {
-  font-size: 0.75rem;
   color: #b9a66a;
+  font-size: 0.75rem;
 }
 
 .post-title {
-  font-size: 1rem;
   font-weight: 800;
   color: #f5e6c8;
 }
 
 .post-content {
-  display: none;
-  margin-top: 12px;
+  margin-top: 10px;
   color: #e7d7a8;
   line-height: 1.6;
-}
-
-.post.open .post-content {
-  display: block;
 }
 
 /* FOOTER */
