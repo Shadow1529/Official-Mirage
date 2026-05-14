@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #0d0b07;
+  color: #f5e6c8;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 30px;
+  background: rgba(20, 16, 8, 0.95);
+  border-bottom: 1px solid #3a2f12;
+  backdrop-filter: blur(10px);
+}
+
+.nav-logo {
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #fff3c4, #d4af37, #ffdf70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-tab {
+  background: transparent;
+  border: 1px solid #3a2f12;
+  color: #c9b37a;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-tab.active {
+  background: linear-gradient(135deg, #d4af37, #ffdf70);
+  color: #1a1205;
+  font-weight: 700;
+}
+
+/* SECTIONS */
+.section {
+  display: none;
+  padding: 60px 20px;
+}
+
+.section.visible {
+  display: block;
+}
+
+.about-wrap {
+  max-width: 900px;
+  margin: auto;
+}
+
+.section-mirage {
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: #d4af37;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about-card {
+  background: #14110a;
+  border: 1px solid #3a2f12;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.about-card h2 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+/* POSTS */
+.post {
+  background: #14110a;
+  border: 1px solid #3a2f12;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.post:hover {
+  border-color: gold;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-header img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #d4af37;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-creator {
+  font-size: 0.85rem;
+  color: #d4af37;
+  font-weight: 700;
+}
+
+.post-headline {
+  font-size: 0.75rem;
+  color: #b9a66a;
+}
+
+.post-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f5e6c8;
+}
+
+.post-content {
+  display: none;
+  margin-top: 12px;
+  color: #e7d7a8;
+  line-height: 1.6;
+}
+
+.post.open .post-content {
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #3a2f12;
+  color: #a8925f;
+}
