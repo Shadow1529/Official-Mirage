@@ -1,12 +1,12 @@
 function show(id, btn) {
-  document.querySelectorAll(".section").forEach(s => s.classList.remove("visible"));
-  document.querySelectorAll(".nav-tab").forEach(b => b.classList.remove("active"));
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
+  document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
 
-  document.getElementById(id).classList.add("visible");
-  btn.classList.add("active");
+  document.getElementById(id).classList.add('visible');
+  btn.classList.add('active');
 }
 
-/* 🔥 CHANGE THIS */
+/* 🔥 YOUR GITHUB USERNAME */
 const githubUser = "Shadow1529";
 
 async function loadPosts() {
@@ -22,8 +22,7 @@ async function loadPosts() {
 
     el.innerHTML = `
       <div class="post-header">
-        <img src="https://github.com/${githubUser}.png" />
-
+        <img src="https://github.com/${githubUser}.png"/>
         <div class="post-meta">
           <div class="post-creator">${post.role} • ${post.creator}</div>
           <div class="post-headline">${post.headline}</div>
@@ -35,8 +34,6 @@ async function loadPosts() {
         ${post.content}
       </div>
     `;
-
-    el.onclick = () => el.classList.toggle("open");
 
     container.appendChild(el);
   });
