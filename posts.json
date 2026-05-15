@@ -7,11 +7,10 @@
     "content": "this is just a part release so excpect more soon."
   },
   {
-    "role": "Manager"
-    "creator": "Blax"
-    "headline": "Small Update"
-    "title": "5/15/26"
+    "role": "Manager",
+    "creator": "Blax",
+    "headline": "Small Update",
+    "title": "5/15/26",
     "content": "added some improvement changes + added mobile scaling support"
   }
-
 ]
