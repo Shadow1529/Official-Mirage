@@ -12,5 +12,12 @@
     "headline": "Small Update",
     "title": "5/15/26",
     "content": "added some improvement changes + added mobile scaling support. Also we will most likely add a 0Auth2 system , so you guys can login with discord accounts , and access different tabs"
+  },
+  {
+    "role": "Manager",
+    "creator": "Blax",
+    "headline": "Status Update",
+    "title": "5/22/26",
+    "content": "Due to various reasons , our shop will be delayed , but will be published soon"
   }
 ]
